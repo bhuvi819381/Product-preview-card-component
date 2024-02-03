@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              DarkCyan: "hsl(158, 36%, 37%)",
+              Cream: "hsl(30, 38%, 92%)",
+              VeryDarkBlue: "hsl(212, 21%, 14%)",
+              DarkGrayishBlue: "hsl(228, 12%, 48%)",
+              White: "hsl(0, 0%, 100%)",
+            },
+            fontFamily: {
+              Montserrat: "'Fraunces', serif",
+              Fraunces: "'Montserrat', sans-serif",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="w-full h-screen m-0 p-0 bg-Cream flex items-center justify-center flex-col font-[14px]"
+  >
+    <main class="w-[45rem] h-[40rem] bg-White rounded-xl flex max-[376px]:w-[376px] h-[30rem]">
+      <section>
+        <figure class="h-full overflow-hidden">
+        <img class="rounded-tl-xl rounded-tr-none w-full h-full object-cover hidden" src="./images/image-product-mobile.jpg" alt="">
+          <img
+            class="rounded-l-xl w-full h-full object-cover"
+            src="./images/image-product-desktop.jpg"
+            alt="perfume photo"
+          />
+        </figure>
+      </section>
+      <section class="w-1/2 m-12 pr-1 max-[376px]:w-[360px]">
+        <section
+          class="font-Fraunces uppercase text-DarkGrayishBlue tracking-[.30em]"
+        >
+          Perfume
+        </section>
+        <section class="my-10 ">
+          <h1 class="font-Montserrat text-5xl  ">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+        </section>
+        <section class="mb-10">
+          <p class="text-DarkGrayishBlue text-md tracking-wider">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+        </section>
+        <section class="flex mb-10">
+          <h1 class="text-DarkCyan font-extrabold text-4xl font-Montserrat">$149.99</h1>
+          <h6 class="ml-7 flex items-center justify-center text-DarkGrayishBlue line-through">$169.99</h6>
+        </section>
+        <section class="mt-5">
+          
+          <button class="w-full h-14 text-White bg-DarkCyan rounded-xl font-bold hover:bg-VeryDarkBlue flex items-center justify-center">
+            <img class="px-2" src="./images/icon-cart.svg" alt="cart icon">Add to Cart</button>
+        </section>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a class="text-DarkCyan hover:text-VeryDarkBlue" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a class="text-DarkCyan hover:text-VeryDarkBlue" href="https://www.frontendmentor.io/profile/karan819381">karan819381</a>.
+    </footer>
+  </body>
+</html>
