@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/karan819381/Product-preview-card-component]
-- Live Site URL: [https://karan819381.github.io/Product-preview-card-component/]
+- Solution URL: [https://github.com/bhuvi819381/Product-preview-card-component]
+- Live Site URL: [https://bhuvi819381.github.io/Product-preview-card-component/]
 
 ## My process
 
